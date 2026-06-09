@@ -1,0 +1,58 @@
+server: # Configuración del servidor REST y WebSocket
+  port: 2333
+  address: 0.0.0.0
+
+lavalink:
+  plugins:
+    # 🔌 Plugin oficial de YouTube para Lavalink v4 (Obligatorio)
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.1"
+  
+  server:
+    password: "youshallnotpass"
+    sources:
+      # Desactivamos el youtube nativo (v4 ya no lo soporta directamente, usamos el plugin de arriba)
+      youtube: false 
+      bandcamp: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+    
+    filters: # Filtros de audio (por si más adelante quieres poner efectos de ecualización o velocidad)
+      volume: true
+      equalizer: true
+      timescale: true
+      tremolo: true
+      vibrato: true
+      distortion: true
+      rotation: true
+      channelMix: true
+      lowPass: true
+
+    bufferDurationMs: 400
+    frameBufferDurationMs: 5000
+    opusEncodingQuality: 10
+    resamplingQuality: LOW
+    trackStuckThresholdMs: 10000
+    useSeekGhosting: true
+    youtubePlaylistLoadLimit: 6
+    playerUpdateInterval: 5
+    youtubeSearchEnabled: true
+    soundcloudSearchEnabled: true
+    gc-warnings: true
+
+# Configuración de los plugins (si es necesario personalizar algo)
+plugins:
+  youtube:
+    enabled: true # Activa las funciones del plugin de YouTube
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+    # En el futuro, si YouTube te da error 403 (bloqueo), aquí puedes configurar tus cookies o PO Token.
+
+logging:
+  file:
+    path: ./logs/
+  level:
+    root: INFO
+    lavalink: INFO
