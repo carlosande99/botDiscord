@@ -357,3 +357,8 @@
 2026-06-11T20:08:08.192+02:00  INFO 41177 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: te vas
 2026-06-11T20:08:08.194+02:00  INFO 41177 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch%3Ate+vas
 2026-06-11T20:13:02.985+02:00  INFO 41177 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/0j0a06r4j6fjqcv6/players/1512817823452233910
+2026-06-11T20:59:33.464+02:00  INFO 41177 --- [Lavalink] [XNIO-1 I/O-6] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:51172 with id 0j0a06r4j6fjqcv6 -- CloseStatus[code=1006, reason=]
+2026-06-11T20:59:33.464+02:00  INFO 41177 --- [Lavalink] [XNIO-1 I/O-6] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2026-06-11T20:59:36.549+02:00  INFO 41177 --- [Lavalink] [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.3.13.Final
+2026-06-11T20:59:36.551+02:00  INFO 41177 --- [Lavalink] [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-06-11T20:59:36.553+02:00  INFO 41177 --- [Lavalink] [SpringApplicationShutdownHook] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
