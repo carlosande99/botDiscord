@@ -15,3 +15,7 @@ yarn-error.log*
 # builds
 dist/
 build/
+
+spring.log*
+
+apuntes.txt
